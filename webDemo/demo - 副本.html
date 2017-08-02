@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8"/>
+	<style>
+
+
+	*{margin:0px;padding:0px}
+	
+/*
+大于768
+ */
+	@media screen and (max-width:768px ){
+		#_body{background-color: red}
+	li:nth-child(1){font-size: 30px;border:0.5px solid;padding:10px;color: white;border-color: #fff;list-style-type:none;background:#663366}
+	li:nth-child(2){font-size: 30px;border:0.5px solid;padding:10px;color: white;border-color: #fff;list-style-type:none;background:#663366}
+	li:nth-child(3){font-size: 30px;border:0.5px solid;padding:10px;color: white;border-color: #fff;list-style-type:none;background:#663366}
+	.line{
+		background-color: white; width:50px;height:4px;display:block;margin:10px;
+		transition: all 0.2s ease-in-out;
+	}
+	.mystyle .line:nth-child(1){
+
+		transform: translateY(14px) rotate(45deg);
+	}
+	.mystyle .line:nth-child(2){
+		opacity: 0;
+	}
+	.mystyle .line:nth-child(3){
+		transform: translateY(-14px) rotate(-45deg);
+	}
+
+
+	.selectBar{
+		visibility: hidden;width:95%;margin:110px 13px;text-align:center;opacity: 0;
+		transition:all 0.2s ease-in-out;
+	}
+
+	.mystyle1{
+		opacity: 1;
+	}
+	.returnTop{
+		display: none;background-color:#663366;width:80px;height:80px;position:fixed;right:10%;bottom: 100px;border-radius:50%
+	}
+	.returnA{
+		position: absolute;top: -5px;left: 17px;border-width: 22px 23px;border-style: dashed dashed solid;border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #FFF;
+	}
+	.returnB{
+		position: absolute;top: 35px;left: 28px;width: 25px;height: 25px;background: #FFF;
+	}
+	.nav{
+		position:fixed;width:100%;height: 100px;background-color:#663366;float:right;
+	}
+	.title{
+	   font-family: Constantia;font-size:50px;color:white;padding:20px 30px;float:left
+	}
+	.navButton{
+		border-radius: 10px;float:right;width:70px;height:55px;margin:25px
+	}
+	.font{
+		font-family:Constantia;text-align: center;padding:150px 50px 50px 50px;color:white;font-size:30px;
+
+	}
+	.font2{
+		text-align: center;padding:100px 50px 0px 50px;color:white;font-size:30px;font-family:Constantia;
+	}
+	.people{
+		border-radius:50%;margin:5% 35% 5%;
+	}
+	.title2{
+		text-align:center;font-weight:bold;font-size:50px;margin:40px;color:gray;
+	}
+
+	.imgRow1 img:nth-child(1){
+		float:left;width: 40%;margin-left: 5%; margin-top: 50px
+	}
+	.imgRow1 img:nth-child(2){
+		float:right;width: 40%;margin-right: 5%; margin-top: 50px
+	}
+	.imgRow2 img:nth-child(1){
+		float:left;width: 40%;margin-left: 5%; margin-top: 50px
+	}
+	.imgRow2 img:nth-child(2){
+		float:right;width: 40%;margin-right: 5%; margin-top: 50px
+	}
+	.imgRow3 img:nth-child(1){
+		float:left;width: 40%;margin-left: 5%; margin-top: 50px
+	}
+	.imgRow3 img:nth-child(2){
+		float:right;width: 40%;margin-right: 5%; margin-top: 50px
+	}
+	.title3{
+		text-align: center;font-weight:bold;font-size:40px;margin-top:1400px;color:gray;
+	}
+	.text{
+		outline:none;border-top-style: none; border-right-style: none; border-left-style: none; border-bottom-style: solid;width:80%;height: 10%;margin:10% 0px 0px 1%;font-size:40px
+	}
+	.textarea{
+		height:200px;outline:none;border-top-style: none; border-right-style: none; border-left-style: none; border-bottom-style: solid;width:80%;height: 50px;margin:10% 0px 0px 1%;font-size:40px;
+	}
+	.submit{
+		font-size: 35PX;outline:none;height: 70px;text-align: center;width: 160px;border-radius:40px;background: #fff;border: 2px solid gray;color:gray;
+	}
+	.submit:hover{
+		font-size: 35PX;outline:none;height: 70px;text-align: center;width: 160px;border-radius:40px;background: #fff;border: 2px solid #663366;color:#663366;
+	}
+	.foot{
+		width:100%;height:400px;background-color:gray;
+	}
+	.font4{
+		text-align:center;font-size:40px;color:white;padding:3% 0px 20px 0px;
+	}
+	.font5{
+		text-align:center;font-size:20px;color:white;padding-bottom:80px;
+	}
+	.foot-img1{
+		width: 80px;border-radius:50%;border:2px solid; color:white;padding:5px;margin-left:35%
+	}
+    .foot-img2{
+    	width: 60px;border-radius:50%;border:2px solid; color:white;padding:15px;margin-left:5%
+    }
+    .foot-img3{
+    	width: 60px;border-radius:50%;border:2px solid; color:white;padding:15px;margin-left:5%
+    }
+    .footer{
+    	width:100%;height:50px;background-color:black;text-align:center;padding-top: 30px;color:white;font-size:20px
+    }
+    .left-solid{
+    	float:left;width:40%;height:6px;background-color:gray;margin:35px 0 0 5%
+    }
+    .mid-solid{
+		font-size:50px;color:gray;font-weight: bold;float:left;margin-left:1.5%
+    }
+    .right-solid{
+		float:right;width:40%;height:6px;background-color:gray;margin:35px 5% 0 0
+    }
+    
+}
+/*
+小于768
+ */	
+	@media only screen and (min-width : 767px){
+	li:nth-child(1){font-size: 30px;border:0.5px solid;padding:10px;color: white;border-color: #fff;list-style-type:none;background:#663366}
+	li:nth-child(2){font-size: 30px;border:0.5px solid;padding:10px;color: white;border-color: #fff;list-style-type:none;background:#663366}
+	li:nth-child(3){font-size: 30px;border:0.5px solid;padding:10px;color: white;border-color: #fff;list-style-type:none;background:#663366}
+	.line{
+		background-color: white; width:50px;height:4px;display:block;margin:10px;
+		transition: all 0.2s ease-in-out;
+	}
+	.mystyle .line:nth-child(1){
+
+		transform: translateY(14px) rotate(45deg);
+	}
+	.mystyle .line:nth-child(2){
+		opacity: 0;
+	}
+	.mystyle .line:nth-child(3){
+
+		transform: translateY(-14px) rotate(-45deg);
+	}
+
+
+	.selectBar{
+		visibility: hidden;width:95%;margin:110px 13px;text-align:center;opacity: 0;
+		transition:all 0.2s ease-in-out;
+	}
+
+	.mystyle1{
+		opacity: 1;
+	}
+	.returnTop{
+		display: none;background-color:#663366;width:80px;height:80px;position:fixed;right:10%;bottom: 100px;border-radius:50%
+	}
+	.returnA{
+		position: absolute;top: -5px;left: 17px;border-width: 22px 23px;border-style: dashed dashed solid;border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #FFF;
+	}
+	.returnB{
+		position: absolute;top: 35px;left: 28px;width: 25px;height: 25px;background: #FFF;
+	}
+	.nav{
+		position:fixed;width:100%;height: 100px;background-color:#663366;float:right;
+	}
+	.title{
+		font-size:50px;color:white;padding:20px 30px;float:left;font-family: Constantia;
+	}
+	.navButton{
+		border-radius: 10px;float:right;width:70px;height:55px;margin:25px
+	}
+	.font{
+		text-align: center;padding:150px 50px 0px 50px;color:white;font-size:40px;font-family: Constantia;
+
+	}
+	.font2{
+		text-align: center;padding:100px 50px 0px 50px;color:white;font-size:30px;font-family: Constantia;
+	}
+	.people{
+		border-radius:50%;margin:4% 20% 5%;
+	}
+	.title2{
+		text-align:center;font-weight:bold;font-size:70px;margin:40px;color:gray;
+	}
+	.portfolio img{
+		width:80%;padding:10% 0px 0px 10%
+	}
+	.title3{
+		text-align:center;font-weight:bold;font-size:70px;margin:40px;color:gray;
+	}
+	.text{
+		outline:none;border-top-style: none; border-right-style: none; border-left-style: none; border-bottom-style: solid;width:80%;height: 10%;margin:10% 0px 0px 1%;font-size:40px
+	}
+	.textarea{
+		height:200px;outline:none;border-top-style: none; border-right-style: none; border-left-style: none; border-bottom-style: solid;width:80%;height: 10%;margin:10% 0px 0px 1%;font-size:40px;
+	}
+	.submit{
+		font-size: 35PX;outline:none;height: 70px;text-align: center;width: 160px;border-radius:40px;background: #fff;border: 2px solid gray;color:gray;
+	}
+	.foot{
+		width:100%;height:400px;background-color:gray;
+	}
+	.font4{
+		text-align:center;font-size:40px;color:white;padding:10% 0px 20px 0px;
+	}
+	.font5{
+		text-align:center;font-size:20px;color:white;padding-bottom:80px;
+	}
+	.foot-img1{
+		width: 80px;border-radius:50%;border:2px solid; color:white;padding:5px;margin-left:23%
+	}
+    .foot-img2{
+    	width: 60px;border-radius:50%;border:2px solid; color:white;padding:15px;margin-left:5%
+    }
+    .foot-img3{
+    	width: 60px;border-radius:50%;border:2px solid; color:white;padding:15px;margin-left:5%
+    }
+    .footer{
+    	width:100%;height:50px;background-color:black;text-align:center;padding-top: 30px;color:white;font-size:20px
+    }
+    .c-hr{
+    	 margin-top:10%
+    }
+    .left-solid{
+    	float:left;width:35%;height:6px;background-color:gray;margin:35px 0 0 5%
+    }
+    .mid-solid{
+		font-size:50px;color:gray;font-weight: bold;float:left;margin-left:2.5%
+    }
+    .right-solid{
+		float:right;width:35%;height:6px;background-color:gray;margin:35px 5% 0 0
+    }
+}
+
+
+
+</style>
+</head>
+<body id='_body'>
+	<a class="returnTop" id="_returnTop" onclick="scrollPosition('_body');">
+			<span class="returnA"></span>
+			<span class="returnB"></span>
+	</a>
+<!--body-->
+<div class="container">
+<!--头部-->
+	<div class="nav" id="_nav">
+		<div class="title" >Qlip</div> 
+		<div class="navButton" id="_navButton" onclick="B();C();" >
+			<span class="line" ></span>
+			<span class="line" ></span>
+			<span class="line" ></span>
+		</div>
+		<div class="selectBar" id="_selectBar" >
+			<ul>
+				<li onclick="scrollPosition('_about')" >About</li>
+				<li onclick="scrollPosition('_portfolio')" >Portfolio</li>
+				<li onclick="scrollPosition('_contact')" >Contact</li>
+			</ul>
+		</div>
+	</div>
+<!--介绍信息-->
+	<div class="about" id="_about">
+		<div style="width:100%;background-color:gray;">
+			<div class="font" >
+				Front-End Developer and UX/UI designer, with practical experience in project management, branding strategy, and creative direction; devoted to functional programming and information architecture.
+			</div>
+
+			<!--特殊分割线-->
+			<div style="margin-top:10px;"><div class="left-solid" style="background:white"></div>
+		<div class="mid-solid" style="color:white" >&lt;/&gt;</div>
+		<div class="right-solid" style="background:white" ></div></div>
+			<!--分割线-->
+
+			<div class="font2" >
+				Web Developer - User Experience Designer - Graphic Artist
+			</div>
+
+			<img src="people.jpg" class="people" >
+		</div>
+	</div>
+<!--作品展示-->
+	<div class="portfolio" id="_portfolio">
+		<div class="title2">PORTFOLIO</div>
+
+		<!--特殊分割线-->
+		<div style="margin-top:10px;"><div class="left-solid"></div>
+		<div class="mid-solid" >&lt;/&gt;</div>
+		<div class="right-solid" ></div></div>
+      	<!--分割线-->
+
+			<div style="margin-top:120px">
+			    <div class="imgRow1"><img src="a.jpg" ><img src="c.jpg" ></div>
+				<div class="imgRow2"><img src="d.jpg" ><img src="d.jpg" ></div>
+				<div class="imgRow3"><img src="e.jpg" ><img src="f.jpg" ></div>
+			</div>
+	</div>
+
+	<hr class="c-hr">
+<!--联系方式-->
+	<div class="contact" id="_contact">
+		<div class="title3" >CONTACT US</div>
+		<!--特殊分割线-->
+		<div style="margin-top:10px;"><div class="left-solid"></div>
+		<div class="mid-solid" >&lt;/&gt;</div>
+		<div class="right-solid" ></div></div>
+		<!--分割线-->
+
+		<form action="" method="post">
+			<div style="text-align:center;">
+				<input type="text" class="text" placeholder="Name" >
+				<input type="text" class="text" placeholder="Email Address" >
+				<input type="text" class="text" placeholder="Phone Number" >
+				<textarea class="textarea"></textarea>
+			</div>
+			<div style="text-align:center;padding:50px;"><input class="submit" type="submit" value="Send"></div>
+		</form>
+	</div>
+<!--底部-->
+	<div class="foot" >
+		<div class="font4" >About This page</div>
+		<div class="font5" >Made by pejamLee </div>
+		<a href="https://www.github.com/"><img class="foot-img1" src="git.png"></a>
+		<a href="https://www.twitter.com/"><img class="foot-img2" src="tuite.png" ></a>
+		<a href="https://www.github.com/"><img class="foot-img3" src="tuite2.png" ></a>
+
+	</div>
+	<div class="footer">qlip © 2017. All Rights Reversed</div>
+
+		
+</div>
+</body>
+</html>
+
+
+<script type="text/javascript">
+// function refresh(){window.location.reload();}
+// setTimeout('refresh()',1000);
+
+/*
+nav动画过度
+ */
+var temp = 0;
+function C(){
+    if(temp == 0){
+    	document.getElementById("_navButton").classList.add("mystyle");
+    	document.getElementById("_selectBar").classList.add("mystyle1");
+    	temp++;
+    }
+	else{
+		document.getElementById("_navButton").classList.remove("mystyle");
+		document.getElementById("_selectBar").classList.remove("mystyle1");
+		temp--;
+	}
+}
+
+
+
+/*
+顶部显示隐藏
+ */
+function A(){
+		var p = 0,t = 0;
+
+		addEventListener("scroll",function(){
+p = document.body.scrollTop;
+	    if( t <= p) {
+     		document.getElementById("_nav").style.display = "none";
+	        t = document.body.scrollTop;
+	    } else {
+			document.getElementById("_nav").style.display = "block";
+	        t = document.body.scrollTop; 
+	    }
+	});
+}
+A();
+/*
+返回顶部按钮的显示隐藏
+ */
+addEventListener("scroll", function(){
+    var t = document.body.scrollTop;
+    if(t > 300 ){
+    	document.getElementById('_returnTop').style.display = "block";
+    }
+    else{
+    	document.getElementById('_returnTop').style.display = "none";
+    }
+});
+
+function B(){
+	if(document.getElementById('_selectBar').style.visibility == "visible"){
+		document.getElementById('_selectBar').style.visibility = "hidden";
+	}else{
+		document.getElementById('_selectBar').style.visibility = "visible";
+	}
+}
+
+/*
+平滑锚点跳转
+ */
+
+function getScrollOffsets(_w) { //get the offset position
+    _w = _w || window;
+    //for all and IE9+
+    if (_w.pageXOffset != null) return {
+        x: _w.pageXOffset,
+        y: _w.pageYOffset
+    };
+    //for IE678
+}
+
+function getViewPortSize(_w) { //get the window size
+    _w = _w || window;
+    //for all and IE9+
+    if (_w.innerWidth != null) return {
+        x: _w.innerWidth,
+        y: _w.innerHeight
+    };
+    //for IE678
+    var _d = _w.document;
+    if (document.compatMode == "CSS1Compat") return { //for IE678
+        x: _d.documentElement.clientWidth,
+        y: _d.documentElement.clientHeight
+    };
+    //for other mode
+    return {
+        x: _d.body.clientWidth,
+        y: _d.body.clientHeight
+    };
+
+}
+
+function scrollPosition(_obj) {
+    var targetX, targetY;
+    if (!_obj) {
+        targetX = 0;
+        targetY = 0;
+    } else {
+        if (typeof (_obj) == "string") {
+            _obj = document.getElementById(_obj);
+        } else {
+            _obj = _obj
+        }
+        targetX = _obj.getBoundingClientRect().left + getScrollOffsets().x;
+        targetY = _obj.getBoundingClientRect().top + getScrollOffsets().y;
+    }
+    var maxTargetX = document.body.scrollWidth - getViewPortSize().x;
+    if (targetX >= maxTargetX) targetX = maxTargetX;
+    if (targetX < 0) targetX = 0;
+    var maxTargetY = document.body.scrollHeight - getViewPortSize().y;
+    if (targetY >= maxTargetY) targetY = maxTargetY;
+    if (targetY < 0) targetY = 0;
+
+    console.log(targetX, targetY)
+
+    //console.log(targetX, targetY);
+    var tempTimer = setInterval(function () {
+        var currentY = getScrollOffsets().y;
+        var currentX = getScrollOffsets().x;
+
+        var tempTargetY = currentY - (currentY - targetY) / 10;
+        var tempTargetX = currentX - (currentX - targetX) / 10;
+        if (Math.abs(tempTargetY - currentY) < 1 && tempTargetY - currentY > 0) {
+            tempTargetY++;
+        }
+        if (Math.abs(tempTargetY - currentY) < 1 && tempTargetY - currentY < 0) {
+            tempTargetY--;
+        }
+        if (Math.abs(tempTargetX - currentX) < 1 && tempTargetX - currentX > 0) {
+            tempTargetX++;
+        }
+        if (Math.abs(tempTargetX - currentX) < 1 && tempTargetX - currentX < 0) {
+            tempTargetX--;
+        }
+
+        //console.log(currentX, tempTargetX, currentY, tempTargetY);
+        window.scrollTo(tempTargetX, tempTargetY);
+
+
+        if (Math.abs(getScrollOffsets().y - targetY) <= 2 && Math.abs(getScrollOffsets().x - targetX) <= 2) {
+            clearInterval(tempTimer);
+            window.scrollTo(targetX, targetY);
+            //console.log("done");
+        }
+    }, 10);
+    document.getElementById('_selectBar').style.visibility = "hidden";
+    document.getElementById('_navButton').classList.remove('mystyle');
+    document.getElementById("_selectBar").classList.remove("mystyle1");temp = 0;
+}
+</script>
+
